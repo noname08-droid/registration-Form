@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8y">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>System Development</title>
+        <style>
+            body{
+                color: black;
+                justify-content: center;
+                margin: 0;
+                background-color: white;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            header{
+                background-image: url(header.jpg);
+                width: 100%;
+                padding: 40px;
+                height: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            nav{
+                background-color: white;
+                width: 20%;
+                height: 100%;
+                float: left;
+            }
+            
+            li, .pagination{
+                width: 20%;
+                list-style: none;
+                margin-top: -20px;
+                margin-left: 30%;
+                
+            }
+            section{
+                background-color: white;
+                width: 80%;
+                height: 100%;
+                float: left;
+            }
+            p{
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                flex-direction: row;
+                margin-right: 10px;
+            }
+            a{
+                float: left;
+                margin-bottom: 15px;
+                list-style: none;
+                color: blue;
+                text-decoration: none;
+            }
+            h3{
+                text-align: center;
+                margin: 20px;
+                color: black;
+                font-weight: bold;
+            }
+            img{
+                width: 50%;
+                height: 50%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                margin-left: 30%;
+            }
+            #drop, .container{
+                margin: 20px;
+                margin-left: 20%;
+            }
+            #about{
+                color: black;
+                font-weight: bold;
+            }
+            .footer{
+                background-color: black;
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+                font-weight: bold;
+                font-size: 20px;
+                margin: 0;
+                color: white;
+            }
+            @media (max-width: 1000px){
+                nav, section,h3, a
+                {
+                    width: 100%;
+                    height: auto;
+                    float: left;
+                }
+            }
+            .form-group{
+                width: 50%;
+            }
+            .section{
+                padding: 5px;
+                
+            }
+            #lable{
+                margin-top: 10px;
+            }
+            #phone{
+                width: 20%;
+            }
+            #address{
+                width: 40%;
+                height: 100px;
+            }
+            #new-page{
+                background-color: blue;
+                color: white;
+                margin-top: 40px;
+            }
+            #button{
+                padding: 10px;
+                font-size: 20px;
+                margin-bottom: 20px;
+                margin: 10px;
+            }
+            #myImage{
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            #myBorder{
+                background-color: #D3D3D3;
+                width: 40px;
+                height: auto;
+                text-align: center;
+            }
+            
+        </style>
+
+
+        <script type="text/javascript">
+            function dataValidation() {
+                if (document.studentRegistrationForm.uploadButon.value==""){
+                    alert("Profile is Required.");
+                    return false;
+                }else if(document.studentRegistrationForm.firstName.value==""){
+                    alert("First name is Required.");
+                    return false;
+                }else if(document.studentRegistrationForm.middleName.value==""){
+                    alert("Middle name is Required.");
+                    return false;
+                }else if(document.studentRegistrationForm.mylastName.value==""){
+                    alert("Last name is Required.");
+                    return false;
+                }else if(document.studentRegistrationForm.birthDate.value==""){
+                    alert("Birth date is Required.");
+                    return false;
+                }else if(document.studentRegistrationForm.selection.value=="Course"){
+                    alert("Course is Required.");
+                    return false;
+                }else if(document.studentRegistrationForm.myphone.value==""){
+                    alert("Phone number is Required.");
+                    return false;
+                }else if(document.studentRegistrationForm.address.value==""){
+                    alert("Address is Required.");
+                    return false;
+                }else if(document.studentRegistrationForm.email.value==""){
+                    alert("Email is Required.");
+                    return false;
+                }else {
+                    alert("Thank you for Submitting your info!");
+                }
+            }
+        </script>
+
+
+
+
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Computer programming</h1>
+            <div class="contain">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" id="about">About:</button>
+              <div id="demo" class="collapse">
+                  <h3>Name: Ceejay Caballero</h3>
+                  <h3>Section: Blk-1</h3>
+                  <h3>Major: SYSDEV</h3>
+              </div>
+            </div>
+        </header>
+        
+        <nav>
+            <h3>Programming languages:</h3>
+            <ul class="pagination">
+                <li>
+                    <a href="https://www.java.com/en/download/help/whatis_java.html">JAVA</a>
+                    <a href="https://sceweb.sce.uhcl.edu/helm/WEBPAGE-Cpp/my_files/Quick%20Guide/cpp_overview.html">C++</a>
+                    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">C#</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">JAVASCRIPT</a>
+                    <a href="https://devmountain.com/blog/a-list-of-programming-languages-every-programmer-should-know-or-at-least-know-about/">MORE:</a>
+                </li>
+            </ul>
+            <h3>Programming Data Types:</h3>
+            <div class="container">
+                 <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="about">Data types
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li id="drop"><a href="https://www.computerhope.com/jargon/s/string.htm">String</a></li>
+                      <li id="drop"><a href="https://www.computerhope.com/jargon/c/char.htm#:~:text=The%20abbreviation%20char%20is%20used,'4'%2C%20or%20'%23'.">Character</a></li>
+                      <li id="drop"><a href="https://www.computerhope.com/jargon/i/integer.htm">Integer</a></li>
+                      <li id="drop"><a href="https://www.computerhope.com/jargon/f/floapoin.htm">Float</a></li>
+                      <li id="drop"><a href="https://www.computerhope.com/jargon/b/boolean.htm">Boolean</a></li>
+                    </ul>
+                 </div>
+            </div>
+            
+        </nav>
+        
+        <section>
+            
+            <h1>Student Registration Form</h1>
+	<form name="studentRegistrationForm">
+
+        <div  class="container col-md-3">
+            <div class="container col-md-10">
+                <label for="Image" class="form-label">Profile:</label>
+                <input class="form-control" type="file" id="formFile" onchange="preview()" name="uploadButon">
+            </div>
+            <img id="frame" src="" class="img-fluid" />
+        </div>
+
+        <script>
+            function preview() {
+                frame.src = URL.createObjectURL(event.target.files[0]);
+            }
+            function clearImage() {
+                document.getElementById('formFile').value = null;
+                frame.src = "";
+            }
+        </script>
+
+
+
+        <div class="form-group">
+		  <label for="usr">First Name:</label>
+		  <input type="text" class="form-control" id="usr" name="firstName">
+        </div>
+		<div class="form-group">
+		  <label>Middle Name:</label>
+		  <input type="text" class="form-control" name="middleName">
+		</div>
+		<div class="form-group">
+		  <label>Last Name:</label>
+		  <input type="text" class="form-control" name="mylastName">
+		</div>
+
+        <div class="form-group">
+            <label>Birth date:</label>
+            <input type="date" class="form-control" name="birthDate">
+
+        </div>
+
+        <p>Course:</p>
+
+        <select class="section" name="selection">  
+            <option value="Course">Course:</option>  
+            <option value="BSIT">BSIT</option>  
+            <option value="BBA">BBA</option>  
+            <option value="B.Tech">B.Tech</option>  
+            <option value="MBA">MBA</option>  
+            <option value="MCA">MCA</option>  
+            <option value="M.Tech">M.Tech</option>  
+        </select>
+        
+        <p id="lable">Gender:</p>
+            <input type="radio" name="gender" id="lable" checked value="Male"/> Male <br>  
+            <input type="radio" name="gender" id="lable" value="Female"/> Female <br>
+        <p id="lable">Phone:</p>
+            <p id="myBorder" name="country code">61+</p>
+            <input id="phone" type="number" class="form-control" size="10" name="myphone"/>
+
+            <div class="form-group">
+                <label id="lable">Address:</label>
+                <div class="form-outline">
+                    <textarea class="form-control" id="textAreaExample1" rows="4" name="address"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="lable">Email:</label>
+                <input type="email" class="form-control" name="email">
+            </div>  
+
+            <button type="submit" id="button" onclick="return dataValidation()">Submit:</button>
+            <button id="button">Clear:</button>
+	</form>
+
+        </section>
+        <footer><a href="#" class="footer">Copyright © </a></footer>
+    </body>
+</html>
